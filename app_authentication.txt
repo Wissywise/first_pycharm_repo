@@ -1,0 +1,23 @@
+import requests
+
+api_key = "d7642a40a2a409aa94bd273d0b01d9f4"
+
+city = "New York"
+url = "http://api.openweathermap.org/data/2.5/weather"
+
+params = {
+    "q": city,
+    "appid": api_key,
+    "units": "metric"
+}
+
+response = requests.get(url, params=params)
+
+if response.status_code == 200:
+    data = response.json()
+    weather = data["weather"][0]["description"]
+    temperature = data["main"]["temp"]
+    print(f"Weather in {city}: {weather}")
+    print(f"Temperature: {temperature}°C")
+else:
+    print(f"Error fetching data: {response.status_code}")
