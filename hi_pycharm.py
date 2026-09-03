@@ -11,9 +11,11 @@ print("This is a sample Python script in PyCharm to demonstrate basic functional
 # 6. Type git remote add origin <repository URL> to add the remote repository to the local environment.
 # 7. Create the branch main by typing git branch -M main.
 # 8. Type git add . to stage all the changes in the project directory.
-# 9. Type git commit -m "Initial commit" to commit the changes with a message.
-# 10. Type git push -u origin main to push the changes to the remote repository on GitHub.
-# 11. If prompted, enter your GitHub username and password or
+# 9. Type git commit -m "Initial commit of the project files" to commit the changes with a message.
+# 10.Type git pull origin main to pull the changes from the remote repository on GitHub to the local environment.
+# 11. Type git push -u origin main to push the changes to the remote repository on GitHub.
+# 12. If prompted, enter your GitHub username and password or personal access token to authenticate the push operation.
+# 13. Type git status to check the status of the repository and see if there are any uncommitted changes.
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
